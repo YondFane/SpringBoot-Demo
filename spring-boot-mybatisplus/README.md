@@ -132,3 +132,6 @@
 | ------ | ------- | -------- | --------------- | -------------- |
 | isDesc | boolean | 否       | 是              | 是否倒序查询   |
 | sort   | short   | 否       | Short.MAX_VALUE | 数字越小越靠前 |
+
+
+## [MybatisX 快速开发插件](https://mp.baomidou.com/guide/mybatisx-idea-plugin.html#%E5%8A%9F%E8%83%BD)
