@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
+
+mybatis-plus:
+  mapper-locations: classpath:mappers/*.xml
+  type-aliases-package: com.yfan.springbootmybatisplus.entity
+  global-config:
+    # ???????
+    db-config:
+      #????  AUTO:"???ID??", INPUT:"????ID",ID_WORKER:"????ID (??????ID)", UUID:"????ID UUID";
+      id-type: auto
+      #???? IGNORED:"????",NOT_NULL:"? NULL ??"),NOT_EMPTY:"????"
+      field-strategy: not_empty
+      #???????
+      table-underline: true
+      #??????????????
+      #capital-mode: true
+      #??????
+      #logic-delete-value: 1
+      #logic-not-delete-value: 0
+      db-type: mysql
+    #??mapper ????
+    refresh: true
+  # ????
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
