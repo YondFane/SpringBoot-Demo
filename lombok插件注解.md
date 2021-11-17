@@ -2,6 +2,7 @@
 ### @Setter ：注解在属性上；为属性提供 setting 方法
 ### @Setter ：注解在属性上；为属性提供 getting 方法
 ### @Log4j ：注解在类上；为类提供一个 属性名为log 的 log4j 日志对象
+### @Slf4j ：注解在类上；为类提供一个 属性名为log 的 Slf4j 日志对象
 ### @NoArgsConstructor ：注解在类上；为类提供一个无参的构造方法
 ### @AllArgsConstructor ：注解在类上；为类提供一个全参的构造方法
 ### @Cleanup : 可以关闭流
