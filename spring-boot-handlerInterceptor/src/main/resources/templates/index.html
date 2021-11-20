@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h1><<首页>></h1>
+<h2><a th:href="@{/login}">模拟错误登录（正确登录后再次点击，通过session认定是否登录）</a></h2>
+<h2><a th:href="@{/login?access=true}">模拟正确登录</a></h2>
+</body>
+</html>
