@@ -4,7 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringBoot-Demo.iml" filepath="$PROJECT_DIR$/.idea/SpringBoot-Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-aop/spring-boot-aop.iml" filepath="$PROJECT_DIR$/spring-boot-aop/spring-boot-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-easyexcel/spring-boot-easyexcel.iml" filepath="$PROJECT_DIR$/spring-boot-easyexcel/spring-boot-easyexcel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-filter/spring-boot-filter.iml" filepath="$PROJECT_DIR$/spring-boot-filter/spring-boot-filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-handlerInterceptor/spring-boot-handlerInterceptor.iml" filepath="$PROJECT_DIR$/spring-boot-handlerInterceptor/spring-boot-handlerInterceptor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-listener/spring-boot-listener.iml" filepath="$PROJECT_DIR$/spring-boot-listener/spring-boot-listener.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatisplus/spring-boot-mybatisplus.iml" filepath="$PROJECT_DIR$/spring-boot-mybatisplus/spring-boot-mybatisplus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" filepath="$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" />
     </modules>
   </component>
 </project>
