@@ -27,7 +27,8 @@ public class UserController {
         // 获取请求参数access
         String access = request.getParameter("access");
         log.info("login中的access参数值：{}",access);
-        log.info((String) request.getAttribute("access"));
+        // 拦截器无法修改request
+        log.info((String) request.getAttribute("ACCESS"));
         return "login";
     }
 
