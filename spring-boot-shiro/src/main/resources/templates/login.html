@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<h1>登录成功！</h1>
+<h2>您好：<span th:text="${username}"></span></h2>
+<h2><a th:href="@{/user/info/{username}(username=${username})}">查看个人信息</a></h2>
+<h2><a th:href="@{/user/info2/{username}(username=${username})}">查看个人信息(无权限访问)</a></h2>
+</body>
+</html>
