@@ -23,7 +23,8 @@ import java.util.Set;
 @Slf4j
 public class CustomRealm extends AuthorizingRealm {
 
-    /*
+    /**
+     * USERNAME_PASSWORD
      * 模拟用户密码
      */
     private static HashMap<String, String> USERNAME_PASSWORD = new HashMap<>();

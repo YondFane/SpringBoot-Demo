@@ -15,16 +15,16 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
-* Shiro配置
-* @Author YFAN
-* @Date 2021/11/22
-*/
+ * Shiro配置
+ * @Author YFAN
+ * @Date 2021/11/22
+ */
 @Configuration
 public class ShiroConfig {
 
     /**
-    * shiro过滤器
-    */
+     * shiro过滤器
+     */
     @Bean("shiroFilter")
     public ShiroFilterFactoryBean shiroFilterFactoryBean(SecurityManager securityManager) {
         ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
@@ -50,8 +50,8 @@ public class ShiroConfig {
     }
 
     /**
-    * 安全管理
-    */
+     * 安全管理
+     */
     @Bean
     public SecurityManager  securityManager() {
         DefaultWebSecurityManager defaultSecurityManager = new DefaultWebSecurityManager();

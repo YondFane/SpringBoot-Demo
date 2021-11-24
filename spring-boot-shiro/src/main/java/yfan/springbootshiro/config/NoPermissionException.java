@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/*
+/**
+ * NoPermissionException
  * 无权限异常处理
  * @author YFAN
  * @date 2021/11/22/022

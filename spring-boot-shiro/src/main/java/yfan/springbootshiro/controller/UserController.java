@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletResponse;
 
-/*
+/**
  * 用户请求处理
  * @author YFAN
  * @date 2021/11/22/022
@@ -18,14 +18,15 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping("user")
 public class UserController {
 
-    /*
+    /**
      * 用户信息
+     * 符合user:info权限要求才能访问
      * @author YFAN
      * @date 2021/11/22/022
      * @param  * @param
      * @return java.lang.String
      */
-    @RequiresPermissions("user:info")//符合user:info权限要求才能访问
+    @RequiresPermissions("user:info")
     @RequestMapping("info/{username}")
     public ModelAndView info(@PathVariable String username){
         ModelAndView modelAndView = new ModelAndView();
@@ -34,8 +35,15 @@ public class UserController {
         return modelAndView;
     }
 
-    //模拟无权限访问
-    @RequiresPermissions("user:info2")//符合user:info2权限要求才能访问
+    /**
+     * 模拟无权限访问
+     * 符合user:info2权限要求才能访问
+     * @Author YFAN
+     * @Date 2021/11/24
+     * @params [username]
+     * @return org.springframework.web.servlet.ModelAndView
+     */
+    @RequiresPermissions("user:info2")
     @RequestMapping("info2/{username}")
     public ModelAndView info2(@PathVariable String username){
         ModelAndView modelAndView = new ModelAndView();
