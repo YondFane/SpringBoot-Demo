@@ -6,7 +6,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-
+/**
+ * User
+ * @Author YFAN
+ * @Date 2021/11/24 10:15
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

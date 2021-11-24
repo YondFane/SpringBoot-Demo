@@ -19,7 +19,8 @@ import java.util.HashMap;
 @Slf4j
 public class UserServiceImpl implements UserService {
 
-    /*
+    /**
+     * DATAMAP
      * 模拟数据库数据
      */
     private static HashMap<Integer, User> DATAMAP = new HashMap<>();
@@ -29,7 +30,7 @@ public class UserServiceImpl implements UserService {
         DATAMAP.put(3, new User(3,"MARK",23));
     }
 
-    /*
+    /**
      * 查询用户
      * @author YFAN
      * @date 2021/11/17/017
@@ -43,7 +44,7 @@ public class UserServiceImpl implements UserService {
         return DATAMAP.get(id);
     }
 
-    /*
+    /**
      * 修改用户
      * @author YFAN
      * @date 2021/11/17/017
@@ -57,7 +58,7 @@ public class UserServiceImpl implements UserService {
         DATAMAP.put(user.getId(), user);
     }
 
-    /*
+    /**
      * 删除用户
      * @author YFAN
      * @date 2021/11/17/017
@@ -71,7 +72,7 @@ public class UserServiceImpl implements UserService {
         DATAMAP.remove(id);
     }
 
-    /*
+    /**
      * 查询所有用户
      * @author YFAN
      * @date 2021/11/17/017
@@ -79,7 +80,7 @@ public class UserServiceImpl implements UserService {
      * @return java.util.HashMap<java.lang.Integer,com.yfan.springbootredis.entity.User>
      */
     @Override
-    public HashMap<Integer, User> selectALl() {
+    public HashMap<Integer, User> selectAll() {
         return DATAMAP;
     }
 }
