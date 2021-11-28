@@ -10,6 +10,8 @@
         <option value="$PROJECT_DIR$/spring-boot-filter/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-handlerInterceptor/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-listener/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-kafka/pom.xml" />
       </list>
     </option>
   </component>
