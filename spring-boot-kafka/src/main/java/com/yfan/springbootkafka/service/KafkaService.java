@@ -14,9 +14,11 @@ public class KafkaService {
     @Autowired
     KafkaTemplate<String, String> kafkaTemplate;
 
-    public void sendMessage(String topic, String message) {
+    public void sendMessage( String message) {
+        String topic = "TEST";
         log.info("开始发送消息：topic：{}，message：{}", topic, message);
-        ListenableFuture<SendResult<String, String>> send = kafkaTemplate.send(topic, message);
+        // 将消息发送到主题TEST中
+        ListenableFuture<SendResult<String, String>> send = kafkaTemplate.send(topic,"MSG", message);
         send.addCallback(new ListenableFutureCallback<SendResult<String, String>>() {
             @Override
             public void onFailure(Throwable ex) {

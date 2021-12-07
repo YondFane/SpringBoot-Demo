@@ -14,7 +14,7 @@ public class KafkaController {
     @RequestMapping("testMessage")
     @ResponseBody
     public void testMessage() {
-        kafkaService.sendMessage("TEST", "测试");
+        kafkaService.sendMessage("测试");
     }
 
 }

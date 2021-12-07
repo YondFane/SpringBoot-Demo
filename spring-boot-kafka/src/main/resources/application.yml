@@ -4,7 +4,7 @@ server:
     context-path: /kafka
 spring:
   kafka:
-    bootstrap-servers: 192.168.40.129:9092
+    bootstrap-servers: 106.55.199.12:9092
     producer:
       retries: 0
       batch-size: 16384
@@ -13,7 +13,7 @@ spring:
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
       consumer:
         group-id: spring-boot-demo
-        # ????
+        # 手动提交
         enable-auto-commit: false
         auto-offset-reset: latest
         key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
@@ -23,5 +23,5 @@ spring:
       listener:
         log-container-config: false
         concurrency: 5
-        # ????
+        # 手动提交
         ack-mode: manual_immediate
