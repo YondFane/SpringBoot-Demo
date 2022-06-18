@@ -20,6 +20,7 @@
         <dependency>
             <groupId>com.yfan</groupId>
             <artifactId>spring-boot-common</artifactId>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
