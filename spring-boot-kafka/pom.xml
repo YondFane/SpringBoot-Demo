@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.yfan</groupId>
     <artifactId>spring-boot-kafka</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>spring-boot-kafka</name>
     <description>spring-boot-kafka</description>
     <properties>

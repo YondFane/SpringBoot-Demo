@@ -22,6 +22,7 @@
         <module>spring-boot-mybatisplus</module>
         <module>spring-boot-redis</module>
         <module>spring-boot-shiro</module>
+        <module>spring-boot-exportpdf</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -33,7 +34,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <spring.boot.version>2.7.0</spring.boot.version>
         <mysql.version>8.0.21</mysql.version>
-        <hutool.version>5.4.5</hutool.version>
+        <hutool.version>5.7.22</hutool.version>
     </properties>
 
     <repositories>

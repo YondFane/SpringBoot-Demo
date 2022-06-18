@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.yfan</groupId>
     <artifactId>spring-boot-mybatisplus</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>spring-boot-mybatisplus</name>
     <description>spring-boot-mybatisplus</description>
     <properties>

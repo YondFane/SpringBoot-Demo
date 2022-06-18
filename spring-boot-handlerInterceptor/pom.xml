@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.yfan</groupId>
     <artifactId>spring-boot-handlerInterceptor</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>spring-boot-handlerInterceptor</name>
     <description>spring-boot-handlerInterceptor</description>
     <properties>
