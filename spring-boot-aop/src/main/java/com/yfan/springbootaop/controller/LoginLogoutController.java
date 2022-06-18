@@ -34,4 +34,7 @@ public class LoginLogoutController {
     }
 
 
+    public void test() {
+        System.out.println("test------------------");
+    }
 }
