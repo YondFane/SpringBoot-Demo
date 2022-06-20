@@ -4,7 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringBoot-Demo.iml" filepath="$PROJECT_DIR$/.idea/SpringBoot-Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-aop/spring-boot-aop.iml" filepath="$PROJECT_DIR$/spring-boot-aop/spring-boot-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-common/spring-boot-common.iml" filepath="$PROJECT_DIR$/spring-boot-common/spring-boot-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-easyexcel/spring-boot-easyexcel.iml" filepath="$PROJECT_DIR$/spring-boot-easyexcel/spring-boot-easyexcel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-elasticsearch/spring-boot-elasticsearch.iml" filepath="$PROJECT_DIR$/spring-boot-elasticsearch/spring-boot-elasticsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-exportpdf/spring-boot-exportpdf.iml" filepath="$PROJECT_DIR$/spring-boot-exportpdf/spring-boot-exportpdf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-exportword/spring-boot-exportword.iml" filepath="$PROJECT_DIR$/spring-boot-exportword/spring-boot-exportword.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-filter/spring-boot-filter.iml" filepath="$PROJECT_DIR$/spring-boot-filter/spring-boot-filter.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-handlerInterceptor/spring-boot-handlerInterceptor.iml" filepath="$PROJECT_DIR$/spring-boot-handlerInterceptor/spring-boot-handlerInterceptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-kafka/spring-boot-kafka.iml" filepath="$PROJECT_DIR$/spring-boot-kafka/spring-boot-kafka.iml" />

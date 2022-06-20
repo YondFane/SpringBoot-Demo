@@ -120,7 +120,7 @@ public class ExportWordUtil {
             configuration.setDirectoryForTemplateLoading(file);
             Template template = configuration.getTemplate(ftlPath, "utf-8");
             //生成到一个临时路径
-            String fileName = URLEncoder.encode(map.getOrDefault("fileName", "defaultFileName") + ".docx", "UTF-8");
+            String fileName = URLEncoder.encode(map.getOrDefault("fileName", "defaultFileName") + ".pdf", "UTF-8");
             log.error("CreateDOCController downloadDCOC fileName:{}", fileName);
             String outFileUrl = savePath + fileName;
             File outFile = new File(outFileUrl);

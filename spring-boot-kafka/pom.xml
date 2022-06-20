@@ -6,7 +6,7 @@
         <groupId>com.yfan</groupId>
         <artifactId>spring-boot-demo</artifactId>
         <version>1.0.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>com.yfan</groupId>
     <artifactId>spring-boot-kafka</artifactId>
@@ -50,15 +50,11 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.12.4</version>
                 <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
+                    <skipTests>true</skipTests>
                 </configuration>
             </plugin>
         </plugins>

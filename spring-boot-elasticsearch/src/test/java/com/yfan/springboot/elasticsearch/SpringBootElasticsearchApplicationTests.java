@@ -21,18 +21,15 @@ import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.client.indices.CreateIndexRequest;
 import org.elasticsearch.client.indices.CreateIndexResponse;
 import org.elasticsearch.client.indices.GetIndexRequest;
-import org.elasticsearch.client.indices.GetIndexResponse;
-import org.elasticsearch.common.xcontent.XContentType;
 import org.elasticsearch.core.TimeValue;
 import org.elasticsearch.index.query.*;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
+import org.elasticsearch.xcontent.XContentType;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 @SpringBootTest
@@ -88,6 +85,7 @@ class SpringBootElasticsearchApplicationTests {
         request.id("1");
         request.timeout(TimeValue.timeValueSeconds(1));
         request.source(JSON.toJSON(user), XContentType.JSON);
+
         // 客户端发送请求
         IndexResponse indexResponse = client.index(request, RequestOptions.DEFAULT);
         System.out.println(indexResponse.toString());

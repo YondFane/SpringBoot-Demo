@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/spring-boot-aop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-aop/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-easyexcel/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-easyexcel/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-elasticsearch/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-elasticsearch/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-exportpdf/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-exportpdf/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-exportword/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-exportword/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-filter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-filter/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-handlerInterceptor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-handlerInterceptor/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-kafka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-kafka/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-listener/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-listener/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-mybatisplus/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-mybatisplus/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-redis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

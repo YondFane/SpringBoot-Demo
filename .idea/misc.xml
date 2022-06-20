@@ -12,6 +12,11 @@
         <option value="$PROJECT_DIR$/spring-boot-listener/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-kafka/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-exportword/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-common/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-exportpdf/pom.xml" />
       </list>
     </option>
   </component>

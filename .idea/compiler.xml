@@ -9,18 +9,26 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-shiro" />
         <module name="spring-boot-redis" />
+        <module name="spring-boot-handlerInterceptor" />
+        <module name="spring-boot-exportword" />
+        <module name="spring-boot-kafka" />
+        <module name="spring-boot-elasticsearch" />
+        <module name="spring-boot-exportpdf" />
         <module name="spring-boot-filter" />
         <module name="spring-boot-aop" />
-        <module name="spring-boot-handlerInterceptor" />
         <module name="spring-boot-listener" />
         <module name="spring-boot-easyexcel" />
-        <module name="spring-boot-kafka" />
+        <module name="spring-boot-common" />
         <module name="spring-boot-mybatisplus" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-boot-aop" target="1.8" />
+      <module name="spring-boot-common" target="1.8" />
       <module name="spring-boot-easyexcel" target="1.8" />
+      <module name="spring-boot-elasticsearch" target="1.8" />
+      <module name="spring-boot-exportpdf" target="1.8" />
+      <module name="spring-boot-exportword" target="1.8" />
       <module name="spring-boot-filter" target="1.8" />
       <module name="spring-boot-handlerInterceptor" target="1.8" />
       <module name="spring-boot-kafka" target="1.8" />
@@ -29,12 +37,17 @@
       <module name="spring-boot-mybatisplus" target="1.8" />
       <module name="spring-boot-redis" target="1.8" />
       <module name="spring-boot-shiro" target="1.8" />
+      <module name="SpringBoot-Demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-boot-aop" options="-parameters" />
+      <module name="spring-boot-common" options="-parameters" />
       <module name="spring-boot-easyexcel" options="-parameters" />
+      <module name="spring-boot-elasticsearch" options="-parameters" />
+      <module name="spring-boot-exportpdf" options="-parameters" />
+      <module name="spring-boot-exportword" options="-parameters" />
       <module name="spring-boot-filter" options="-parameters" />
       <module name="spring-boot-handlerInterceptor" options="-parameters" />
       <module name="spring-boot-kafka" options="-parameters" />
