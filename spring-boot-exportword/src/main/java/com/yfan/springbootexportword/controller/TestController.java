@@ -1,7 +1,5 @@
 package com.yfan.springbootexportword.controller;
 
-import com.yfan.springbootcommon.entity.ExportWordVO;
-import com.yfan.springbootcommon.entity.GycqChengJiaoQueRenVO;
 import com.yfan.springbootcommon.entity.UserVO;
 import com.yfan.springbootcommon.util.ExportWordUtil;
 import org.springframework.stereotype.Controller;
