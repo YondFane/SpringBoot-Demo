@@ -30,11 +30,9 @@ public class ExportWordUtil {
     public static void exportWord(HttpServletRequest request, HttpServletResponse response, String ftlPath, Map map) throws Exception {
         Writer writerOut = null;
         try {
-            File file = ResourceUtils.getFile("classpath:templates");
-            log.error("CreateDOCController downloadDCOC pathFTL:{}", file);
             Configuration configuration = new Configuration();
             configuration.setDefaultEncoding("utf-8");
-            configuration.setDirectoryForTemplateLoading(file);
+            configuration.setClassForTemplateLoading(ExportWordUtil.class, "/templates");
             Template template = configuration.getTemplate(ftlPath, "utf-8");
             String fileName = URLEncoder.encode(map.getOrDefault("fileName", "defaultFileName") + ".docx", "UTF-8");
             log.error("CreateDOCController downloadDCOC fileName:{}", fileName);
@@ -44,7 +42,7 @@ public class ExportWordUtil {
             response.setContentType("application/msword");
             response.setCharacterEncoding("UTF-8");
             response.setHeader("Content-Disposition", "attachment; filename=" + fileName);
-            writerOut = new BufferedWriter(new OutputStreamWriter(response.getOutputStream()));
+            writerOut = new BufferedWriter(new OutputStreamWriter(response.getOutputStream(), "UTF-8"));
             template.process(map, writerOut);
         } catch (Exception e) {
             e.printStackTrace();
@@ -66,33 +64,13 @@ public class ExportWordUtil {
      * @param exportWordVO
      * @return void
      */
-    public static void exportWord(HttpServletRequest request, HttpServletResponse response, String ftlPath, Object exportWordVO) throws Exception {
-        Writer writerOut = null;
+    public static void exportWord(HttpServletRequest request, HttpServletResponse response, String filePath, Object exportWordVO) throws Exception {
         try {
             Map<String, Object> map = beanToMap(exportWordVO);
-            File file = ResourceUtils.getFile("classpath:templates");
-            log.error("CreateDOCController downloadDCOC pathFTL:{}", file);
-            Configuration configuration = new Configuration();
-            configuration.setDefaultEncoding("utf-8");
-            configuration.setDirectoryForTemplateLoading(file);
-            Template template = configuration.getTemplate(ftlPath, "utf-8");
-            String fileName = URLEncoder.encode(map.getOrDefault("fileName", "defaultFileName") + ".docx", "UTF-8");
-            log.error("CreateDOCController downloadDCOC fileName:{}", fileName);
-            // 输出到response
-            request.setCharacterEncoding("UTF-8");
-            response.setCharacterEncoding("utf-8");
-            response.setContentType("application/msword");
-            response.setCharacterEncoding("UTF-8");
-            response.setHeader("Content-Disposition", "attachment; filename=" + fileName);
-            writerOut = new BufferedWriter(new OutputStreamWriter(response.getOutputStream()));
-            template.process(map, writerOut);
+            exportWord(request,response,filePath,map);
         } catch (Exception e) {
             e.printStackTrace();
             throw e;
-        } finally {
-            if (writerOut != null) {
-                writerOut.close();
-            }
         }
     }
 
